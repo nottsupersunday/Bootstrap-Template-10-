@@ -1,0 +1,1297 @@
+<!-- บอก Browser ว่าเอกสารนี้ใช้มาตรฐาน HTML5 -->
+<!DOCTYPE html>
+
+<!-- เริ่มต้นเอกสาร HTML และกำหนดภาษาหลักเป็นภาษาไทย -->
+<html lang="th">
+
+<head>
+
+    <!-- กำหนด Encoding เป็น UTF-8 เพื่อรองรับภาษาไทย -->
+    <meta charset="UTF-8">
+
+    <!-- ทำให้เว็บไซต์ Responsive ตามขนาดหน้าจอ -->
+    <!-- width=device-width = ความกว้างเว็บเท่ากับความกว้างอุปกรณ์ -->
+    <!-- initial-scale=1.0 = กำหนดระดับ Zoom เริ่มต้นเป็น 100% -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- ชื่อเว็บไซต์ที่แสดงบน Tab ของ Browser -->
+    <title>Network Store | Products</title>
+
+
+    <!-- เรียกใช้งาน Bootstrap 5 CSS ผ่าน CDN -->
+    <!-- Bootstrap ช่วยเรื่อง Layout, Responsive, Button, Card, Navbar ฯลฯ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- เรียกใช้ CSS ที่เราเขียนขึ้นเอง -->
+    <!-- ใช้สำหรับปรับแต่งเว็บไซต์เพิ่มเติมจาก Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ====================================================== -->
+<!-- NAVBAR : เมนูหลักด้านบนของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<!--
+navbar             = เรียกใช้ Bootstrap Navbar
+navbar-expand-lg   = หน้าจอขนาดใหญ่แสดงเมนูเต็ม
+                      หน้าจอเล็กจะเปลี่ยนเป็น Hamburger Menu
+navbar-dark        = ใช้ข้อความ Navbar สำหรับพื้นหลังสีเข้ม
+bg-primary         = ใช้สี Primary ของ Bootstrap
+sticky-top         = Navbar ติดอยู่ด้านบนเมื่อ Scroll
+-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <!-- container ใช้ควบคุมความกว้างและจัดเนื้อหาให้อยู่กึ่งกลาง -->
+    <div class="container">
+
+
+        <!-- navbar-brand ใช้สำหรับชื่อหรือ Logo ของเว็บไซต์ -->
+        <!-- fw-bold ทำให้ตัวอักษรเป็นตัวหนา -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            NETWORK STORE
+        </a>
+
+
+        <!-- ปุ่ม Hamburger Menu สำหรับ Tablet/Mobile -->
+        <!-- data-bs-toggle="collapse" สั่งเปิด/ปิดเมนู -->
+        <!-- data-bs-target="#navbarMenu" ระบุว่าจะควบคุม Element id navbarMenu -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <!-- Icon รูป Hamburger ของ Bootstrap -->
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- ส่วนของเมนูที่สามารถ Collapse ได้เมื่อหน้าจอเล็ก -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <!--
+            navbar-nav = รูปแบบรายการเมนูของ Navbar
+            ms-auto    = ดันเมนูไปทางขวามือ
+            -->
+            <ul class="navbar-nav ms-auto">
+
+
+                <!-- เมนู Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- เมนู About -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- เมนู Services -->
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">
+                        Services
+                    </a>
+                </li>
+
+
+                <!-- เมนู Products -->
+                <!-- active หมายถึงหน้าที่กำลังเปิดอยู่ -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="product.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- เมนู Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ====================================================== -->
+<!-- HEADER : ส่วนหัวของหน้า Products -->
+<!-- ====================================================== -->
+
+<!--
+bg-light = พื้นหลังสีอ่อน
+py-5     = Padding ด้านบนและล่างระดับ 5
+-->
+<section class="bg-light py-5">
+
+    <!-- text-center ทำให้ข้อความอยู่กึ่งกลาง -->
+    <div class="container text-center">
+
+
+        <!--
+        badge      = Bootstrap Badge
+        bg-primary = พื้นหลังสี Primary
+        mb-2       = Margin ด้านล่างระดับ 2
+        -->
+        <span class="badge bg-primary mb-2">
+            NETWORK PRODUCTS
+        </span>
+
+
+        <!--
+        h1 = หัวข้อหลักของหน้า
+        fw-bold = ตัวหนา
+        -->
+        <h1 class="fw-bold">
+            สินค้าของเรา
+        </h1>
+
+
+        <!-- text-muted ทำให้ข้อความเป็นสีเทาอ่อน -->
+        <p class="text-muted">
+            อุปกรณ์ Network และ Fiber Optic
+            สำหรับบ้าน สำนักงาน และโรงงานอุตสาหกรรม
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- PRODUCTS : ส่วนแสดงรายการสินค้า -->
+<!-- ====================================================== -->
+
+<!-- py-5 เพิ่มพื้นที่ด้านบนและล่าง -->
+<section class="py-5">
+
+    <div class="container">
+
+
+        <!--
+        row = สร้างแถวของ Bootstrap Grid
+        g-4 = กำหนดช่องว่างระหว่าง Column
+        -->
+        <div class="row g-4">
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 1 : CAT6 LAN Cable -->
+            <!-- ================================================= -->
+
+            <!--
+            Bootstrap ใช้ระบบ Grid 12 Columns
+
+            col-lg-3 = หน้าจอ Large ใช้พื้นที่ 3/12
+                       ดังนั้นแสดงได้ 4 สินค้าต่อแถว
+
+            col-md-6 = หน้าจอ Medium ใช้พื้นที่ 6/12
+                       ดังนั้นแสดงได้ 2 สินค้าต่อแถว
+
+            หน้าจอ Mobile จะเรียงสินค้า 1 รายการต่อแถว
+            -->
+            <div class="col-lg-3 col-md-6">
+
+
+                <!--
+                card      = Bootstrap Card
+                h-100     = Card สูงเต็มพื้นที่ Column
+                shadow-sm = เพิ่มเงาเล็กน้อย
+                -->
+                <div class="card h-100 shadow-sm">
+
+
+                    <!-- รูปภาพสินค้า -->
+                    <!-- alt ใช้อธิบายรูปกรณีรูปไม่สามารถแสดงได้ -->
+                    <img src="images/cat6.jpg"
+                         class="card-img-top"
+                         alt="CAT6 LAN Cable">
+
+
+                    <!-- ส่วนเนื้อหาภายใน Card -->
+                    <div class="card-body">
+
+
+                        <!-- Badge แสดงว่าสินค้านี้ขายดี -->
+                        <span class="badge bg-danger mb-2">
+                            Best Seller
+                        </span>
+
+
+                        <!-- ชื่อสินค้า -->
+                        <h5 class="card-title">
+                            CAT6 LAN Cable
+                        </h5>
+
+
+                        <!-- รายละเอียดสินค้า -->
+                        <p class="card-text">
+                            สาย LAN CAT6 รองรับ Gigabit Ethernet
+                        </p>
+
+
+                        <!--
+                        text-primary ทำให้ราคาเป็นสี Primary
+                        ของ Bootstrap
+                        -->
+                        <h5 class="text-primary">
+                            ฿3,500
+                        </h5>
+
+
+                        <!--
+                        btn btn-primary = Bootstrap Button
+
+                        data-bs-toggle="modal"
+                        บอก Bootstrap ว่าปุ่มนี้ใช้เปิด Modal
+
+                        data-bs-target="#productModal1"
+                        ระบุ Modal ที่ต้องการเปิด
+                        -->
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+
+                            ดูรายละเอียด
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 2 : CAT6A LAN Cable -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <!-- รูปสินค้า -->
+                    <img src="images/cat6a.jpg"
+                         class="card-img-top"
+                         alt="CAT6A Cable">
+
+                    <div class="card-body">
+
+                        <!-- Badge สีเขียวแสดงสินค้าใหม่ -->
+                        <span class="badge bg-success mb-2">
+                            New
+                        </span>
+
+                        <!-- ชื่อสินค้า -->
+                        <h5 class="card-title">
+                            CAT6A LAN Cable
+                        </h5>
+
+                        <!-- รายละเอียดสินค้า -->
+                        <p class="card-text">
+                            สาย LAN CAT6A สำหรับระบบ 10 Gigabit
+                        </p>
+
+                        <!-- ราคาสินค้า -->
+                        <h5 class="text-primary">
+                            ฿6,900
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal หมายเลข 2 -->
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal2">
+
+                            ดูรายละเอียด
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 3 : Fiber Optic Cable -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <!-- รูป Fiber Optic -->
+                    <img src="images/fiber.jpg"
+                         class="card-img-top"
+                         alt="Fiber Optic Cable">
+
+                    <div class="card-body">
+
+                        <!-- Badge สีเหลือง -->
+                        <span class="badge bg-warning text-dark mb-2">
+                            Popular
+                        </span>
+
+                        <!-- ชื่อสินค้า -->
+                        <h5 class="card-title">
+                            Fiber Optic Cable
+                        </h5>
+
+                        <!-- รายละเอียดสินค้า -->
+                        <p class="card-text">
+                            สาย Fiber Optic Single Mode สำหรับ Backbone
+                        </p>
+
+                        <!-- ราคาต่อเมตร -->
+                        <h5 class="text-primary">
+                            ฿25 / เมตร
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal Product 3 -->
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal3">
+
+                            ดูรายละเอียด
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 4 : Network Switch -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <!-- รูป Network Switch -->
+                    <img src="images/switch.jpg"
+                         class="card-img-top"
+                         alt="Network Switch">
+
+                    <div class="card-body">
+
+                        <!-- Badge สินค้าแนะนำ -->
+                        <span class="badge bg-primary mb-2">
+                            Recommended
+                        </span>
+
+                        <!-- ชื่อสินค้า -->
+                        <h5 class="card-title">
+                            Network Switch
+                        </h5>
+
+                        <!-- รายละเอียดสินค้า -->
+                        <p class="card-text">
+                            Gigabit Network Switch 24 Port
+                        </p>
+
+                        <!-- ราคา -->
+                        <h5 class="text-primary">
+                            ฿4,900
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal Product 4 -->
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal4">
+
+                            ดูรายละเอียด
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 5 : SFP Module -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/sfp.jpg"
+                         class="card-img-top"
+                         alt="SFP Module">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            SFP Module
+                        </h5>
+
+                        <p class="card-text">
+                            SFP 1G Single Mode สำหรับ Fiber Optic
+                        </p>
+
+                        <h5 class="text-primary">
+                            ฿950
+                        </h5>
+
+                        <!--
+                        btn-outline-primary =
+                        ปุ่มพื้นหลังขาวและเส้นขอบสี Primary
+                        -->
+                        <!-- ปุ่มเปิด Modal หมายเลข 5 : SFP Module -->
+                        <button type="button"
+        class="btn btn-outline-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#productModal5">
+    ดูรายละเอียด
+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 6 : Network Rack -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/rack.jpg"
+                         class="card-img-top"
+                         alt="Network Rack">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Network Rack
+                        </h5>
+
+                        <p class="card-text">
+                            ตู้ Rack สำหรับติดตั้งอุปกรณ์ Network
+                        </p>
+
+                        <h5 class="text-primary">
+                            ฿5,500
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal หมายเลข 6 : Network Rack -->
+                        <button type="button"
+                                class="btn btn-outline-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal6">    
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 7 : CAT6 Patch Panel -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/patch-panel.jpg"
+                         class="card-img-top"
+                         alt="Patch Panel">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            CAT6 Patch Panel
+                        </h5>
+
+                        <p class="card-text">
+                            Patch Panel CAT6 ขนาด 24 Port
+                        </p>
+
+                        <h5 class="text-primary">
+                            ฿1,890
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal หมายเลข 7 : CAT6 Patch Panel -->
+                        <button type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-toggle="modal"
+        data-bs-target="#productModal7">
+    ดูรายละเอียด
+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PRODUCT 8 : Fiber Patch Cord -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/patch-cord.jpg"
+                         class="card-img-top"
+                         alt="Fiber Patch Cord">
+
+                    <div class="card-body">
+
+                        <!-- Badge แสดงสินค้าใหม่ -->
+                        <span class="badge bg-success mb-2">
+                            New
+                        </span>
+
+                        <h5 class="card-title">
+                            Fiber Patch Cord
+                        </h5>
+
+                        <p class="card-text">
+                            Fiber Optic Patch Cord สำหรับเชื่อมต่ออุปกรณ์
+                        </p>
+
+                        <h5 class="text-primary">
+                            ฿350
+                        </h5>
+
+                        <!-- ปุ่มเปิด Modal หมายเลข 8 : Fiber Patch Cord -->
+                        <button type="button"
+                                class="btn btn-outline-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal8">
+                            ดูรายละเอียด
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- จบ Bootstrap Row -->
+
+    </div>
+    <!-- จบ Container -->
+
+</section>
+<!-- จบส่วน Products -->
+
+
+
+<!-- ====================================================== -->
+<!-- MODAL PRODUCT 1 -->
+<!-- หน้าต่าง Popup สำหรับแสดงรายละเอียดสินค้า -->
+<!-- ====================================================== -->
+
+<!--
+modal fade = สร้าง Bootstrap Modal พร้อม Animation
+id="productModal1" ต้องตรงกับ data-bs-target ของปุ่ม
+-->
+<div class="modal fade"
+     id="productModal1"
+     tabindex="-1">
+
+
+    <!--
+    modal-dialog = กล่องหลักของ Modal
+    modal-dialog-centered = แสดง Modal กึ่งกลางหน้าจอ
+    -->
+    <div class="modal-dialog modal-dialog-centered">
+
+
+        <!-- เนื้อหาทั้งหมดของ Modal -->
+        <div class="modal-content">
+
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <!-- ชื่อสินค้า -->
+                <h5 class="modal-title">
+                    CAT6 LAN Cable
+                </h5>
+
+
+                <!--
+                btn-close = ปุ่ม X
+
+                data-bs-dismiss="modal"
+                ใช้สั่งปิด Modal
+                -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <!-- ส่วนเนื้อหา Modal -->
+            <div class="modal-body">
+
+
+                <!--
+                img-fluid = ทำให้รูป Responsive
+                rounded   = ทำมุมรูปให้โค้ง
+                mb-3      = Margin ด้านล่าง
+                -->
+                <img src="images/cat6.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="CAT6">
+
+
+                <!-- รายละเอียดสินค้า -->
+                <p>
+                    สาย LAN CAT6 สำหรับติดตั้งระบบ Network
+                    รองรับความเร็ว Gigabit Ethernet
+                    เหมาะสำหรับสำนักงาน บ้าน และโรงงาน
+                </p>
+
+
+                <!-- ราคา -->
+                <h5 class="text-primary">
+                    ราคา ฿3,500
+                </h5>
+
+            </div>
+
+
+            <!-- ส่วนล่างของ Modal -->
+            <div class="modal-footer">
+
+
+                <!-- ปุ่มปิด Modal -->
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                    ปิด
+
+                </button>
+
+
+                <!-- ไปหน้า Contact -->
+                <a href="contact.html"
+                   class="btn btn-primary">
+
+                    สอบถามสินค้า
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- จบ Modal -->
+
+
+
+<!-- ====================================================== -->
+<!-- FOOTER : ส่วนล่างสุดของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<!--
+bg-dark    = พื้นหลังสีเข้ม
+text-white = ตัวอักษรสีขาว
+py-4       = Padding บนและล่าง
+-->
+<footer class="bg-dark text-white py-4">
+
+
+    <!-- จัดเนื้อหา Footer ให้อยู่กึ่งกลาง -->
+    <div class="container text-center">
+
+
+        <!-- ชื่อร้าน -->
+        <h5>
+            NETWORK STORE
+        </h5>
+
+
+        <!-- mb-1 ลดระยะห่างด้านล่าง -->
+        <p class="mb-1">
+            Network & Fiber Optic Equipment
+        </p>
+
+
+        <!-- small ใช้แสดงข้อความขนาดเล็ก -->
+        <small>
+            © 2026 Network Store. All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================== -->
+<!-- MODAL 8 : FIBER PATCH CORD -->
+<!-- ======================================== -->
+
+<div class="modal fade"
+     id="productModal8"
+     tabindex="-1"
+     aria-labelledby="productModalLabel8"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel8">
+                    Fiber Patch Cord
+                </h5>
+
+                <!-- ปุ่ม X สำหรับปิด Modal -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- ส่วนรายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <!-- รูปภาพ Fiber Patch Cord -->
+                <img src="images/patch-cord.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="Fiber Patch Cord">
+
+                <!-- รายละเอียดสินค้า -->
+                <p>
+                    Fiber Optic Patch Cord
+                    สำหรับเชื่อมต่ออุปกรณ์ระบบ Fiber Optic
+                </p>
+
+                <!-- ราคาสินค้า -->
+                <h5 class="text-primary">
+                    ราคา ฿350
+                </h5>
+
+            </div>
+
+            <!-- ส่วนปุ่มด้านล่าง -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ======================================== -->
+<!-- MODAL 7 : CAT6 PATCH PANEL -->
+<!-- ======================================== -->
+
+<div class="modal fade"
+     id="productModal7"
+     tabindex="-1"
+     aria-labelledby="productModalLabel7"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel7">
+                    CAT6 Patch Panel
+                </h5>
+
+                <!-- ปุ่ม X สำหรับปิด Modal -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- ส่วนรายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <!-- รูปภาพสินค้า -->
+                <img src="images/patch-panel.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="CAT6 Patch Panel">
+
+                <!-- คำอธิบายสินค้า -->
+                <p>
+                    CAT6 Patch Panel สำหรับจัดระเบียบ
+                    และเชื่อมต่อสาย LAN ภายในตู้ Network Rack
+                </p>
+
+                <!-- ราคาสินค้า -->
+                <h5 class="text-primary">
+                    ราคา ฿1,890
+                </h5>
+
+            </div>
+
+            <!-- ส่วนปุ่มด้านล่าง -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ======================================== -->
+<!-- MODAL 6 : NETWORK RACK -->
+<!-- ======================================== -->
+
+<div class="modal fade"
+     id="productModal6"
+     tabindex="-1"
+     aria-labelledby="productModalLabel6"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel6">
+                    Network Rack
+                </h5>
+
+                <!-- ปุ่มปิด Modal -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- ส่วนรายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <!-- รูปภาพ Network Rack -->
+                <img src="images/rack.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="Network Rack">
+
+                <!-- รายละเอียดสินค้า -->
+                <p>
+                    ตู้ Network Rack สำหรับติดตั้ง
+                    และจัดเก็บอุปกรณ์ระบบเครือข่าย
+                </p>
+
+                <!-- ราคาสินค้า -->
+                <h5 class="text-primary">
+                    ราคา ฿5,500
+                </h5>
+
+            </div>
+
+            <!-- ส่วนปุ่มด้านล่าง -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ========================================= -->
+<!-- MODAL 5 : SFP MODULE -->
+<!-- ========================================= -->
+
+<div class="modal fade"
+     id="productModal5"
+     tabindex="-1"
+     aria-labelledby="productModalLabel5"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel5">
+                    SFP Module
+                </h5>
+
+                <!-- ปุ่ม X สำหรับปิด -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- ส่วนรายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <!-- รูปสินค้า SFP -->
+                <img src="images/sfp.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="SFP Module">
+
+                <!-- รายละเอียดสินค้า -->
+                <p>
+                    SFP 1G Single Mode
+                    สำหรับเชื่อมต่อระบบ Fiber Optic
+                </p>
+
+                <!-- ราคาสินค้า -->
+                <h5 class="text-primary">
+                    ราคา ฿950
+                </h5>
+
+            </div>
+
+            <!-- ส่วนปุ่มด้านล่าง -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================== -->
+<!-- MODAL 4 : NETWORK SWITCH -->
+<!-- =========================================== -->
+
+<div class="modal fade"
+     id="productModal4"
+     tabindex="-1"
+     aria-labelledby="productModalLabel4"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel4">
+                    Network Switch
+                </h5>
+
+                <!-- ปุ่มปิด -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- รายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <!-- รูปสินค้า -->
+                <img src="images/switch.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="Network Switch">
+
+                <!-- คำอธิบาย -->
+                <p>
+                    Gigabit Network Switch 24 Port
+                    สำหรับระบบ Network
+                </p>
+
+                <!-- ราคา -->
+                <h5 class="text-primary">
+                    ราคา ฿4,900
+                </h5>
+
+            </div>
+
+            <!-- ส่วนท้าย Modal -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MODAL 3 : Fiber Optic Cable -->
+<div class="modal fade"
+     id="productModal3"
+     tabindex="-1"
+     aria-labelledby="productModalLabel3"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- ส่วนหัว -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel3">
+                    Fiber Optic Cable
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            <!-- รายละเอียดสินค้า -->
+            <div class="modal-body">
+
+                <img src="images/fiber.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="Fiber Optic Cable">
+
+                <p>
+                    สาย Fiber Optic Single Mode
+                    สำหรับระบบ Backbone
+                </p>
+
+                <h5 class="text-primary">
+                    ราคา ฿25 / เมตร
+                </h5>
+
+            </div>
+
+            <!-- ปุ่มด้านล่าง -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ================================================= -->
+<!-- MODAL 2 : CAT6A LAN CABLE -->
+<!-- หน้าต่างแสดงรายละเอียดสินค้า CAT6A -->
+<!-- ================================================= -->
+
+<div class="modal fade"
+     id="productModal2"
+     tabindex="-1"
+     aria-labelledby="productModalLabel2"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <!-- ส่วนหัว Modal -->
+            <div class="modal-header">
+
+                <h5 class="modal-title"
+                    id="productModalLabel2">
+                    CAT6A LAN Cable
+                </h5>
+
+                <!-- ปุ่ม X สำหรับปิด -->
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- ส่วนเนื้อหา Modal -->
+            <div class="modal-body">
+
+                <!-- รูปสินค้า -->
+                <img src="images/cat6a.jpg"
+                     class="img-fluid rounded mb-3"
+                     alt="CAT6A LAN Cable">
+
+                <!-- รายละเอียด -->
+                <p>
+                    สาย LAN CAT6A สำหรับระบบ Network
+                    รองรับความเร็ว 10 Gigabit Ethernet
+                </p>
+
+                <!-- ราคา -->
+                <h5 class="text-primary">
+                    ราคา ฿6,900
+                </h5>
+
+            </div>
+
+            <!-- ส่วนล่าง Modal -->
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    ปิด
+                </button>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+                    สอบถามสินค้า
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ====================================================== -->
+
+<!--
+เรียก Bootstrap JavaScript Bundle ผ่าน CDN
+
+จำเป็นสำหรับ Component ที่มีการทำงาน เช่น
+- Navbar Collapse / Hamburger Menu
+- Modal
+- Dropdown
+- Carousel
+
+คำว่า bundle หมายถึงรวม Popper.js มาให้แล้ว
+-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+</html>

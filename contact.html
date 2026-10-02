@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <!-- รองรับตัวอักษรภาษาไทย -->
+    <meta charset="UTF-8">
+
+    <!-- ทำให้เว็บไซต์ Responsive บน Desktop / Tablet / Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ชื่อที่แสดงบน Tab ของ Browser -->
+    <title>Network Store | Contact</title>
+
+    <!-- เรียกใช้งาน Bootstrap 5 CSS ผ่าน CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- เรียกใช้ CSS ที่เราเขียนเอง -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ====================================================== -->
+<!-- NAVBAR : เมนูหลักด้านบนของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <div class="container">
+
+        <!-- ชื่อเว็บไซต์ / Brand -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            NETWORK STORE
+        </a>
+
+        <!--
+        ปุ่ม Hamburger Menu
+        จะแสดงเมื่อเปิดเว็บไซต์บนหน้าจอขนาดเล็ก
+        -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- เมนูหลัก -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <!-- ms-auto = จัดเมนูไปด้านขวา -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">
+                        Products
+                    </a>
+                </li>
+
+                <!--
+                active หมายถึง
+                ขณะนี้ผู้ใช้อยู่หน้า Contact
+                -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ====================================================== -->
+<!-- BREADCRUMB -->
+<!-- แสดงตำแหน่งของหน้าปัจจุบัน -->
+<!-- Home > Contact -->
+<!-- ====================================================== -->
+
+<section class="bg-light py-3">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb mb-0">
+
+                <!-- กลับหน้า Home -->
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <!-- หน้าปัจจุบัน -->
+                <li class="breadcrumb-item active"
+                    aria-current="page">
+
+                    Contact
+
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- CONTACT HEADER -->
+<!-- ส่วนหัวของหน้า Contact -->
+<!-- ====================================================== -->
+
+<section class="py-5 text-center">
+
+    <div class="container">
+
+        <!-- Bootstrap Badge -->
+        <span class="badge bg-primary mb-3">
+            CONTACT US
+        </span>
+
+        <!-- หัวข้อหลัก -->
+        <h1 class="fw-bold">
+            ติดต่อเรา
+        </h1>
+
+        <!-- คำอธิบาย -->
+        <p class="text-muted">
+
+            สอบถามข้อมูลสินค้าและบริการ
+            Network & Fiber Optic
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- CONTACT SECTION -->
+<!-- แบ่งเป็น 2 Column -->
+<!-- ซ้าย = ข้อมูลติดต่อ -->
+<!-- ขวา = Contact Form -->
+<!-- ====================================================== -->
+
+<section class="pb-5">
+
+    <div class="container">
+
+        <!--
+        row = Bootstrap Grid
+        g-4 = ระยะห่างระหว่าง Column
+        -->
+        <div class="row g-4">
+
+
+            <!-- ================================================= -->
+            <!-- LEFT : CONTACT INFORMATION -->
+            <!-- ================================================= -->
+
+            <!--
+            col-lg-5 =
+            บนหน้าจอขนาดใหญ่ใช้พื้นที่ 5 จาก 12 Column
+            -->
+            <div class="col-lg-5">
+
+                <!-- Card ข้อมูลติดต่อ -->
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="fw-bold mb-4">
+                            ข้อมูลการติดต่อ
+                        </h3>
+
+
+                        <!-- ชื่อร้าน -->
+                        <h5>
+                            Network Store
+                        </h5>
+
+                        <p class="text-muted">
+                            Network & Fiber Optic Equipment
+                        </p>
+
+                        <hr>
+
+
+                        <!-- ที่อยู่ -->
+                        <p>
+                            <strong>Address:</strong><br>
+
+                            Rayong, Thailand
+                        </p>
+
+
+                        <!-- เบอร์โทรศัพท์ -->
+                        <p>
+                            <strong>Telephone:</strong><br>
+
+                            08X-XXX-XXXX
+                        </p>
+
+
+                        <!-- Email -->
+                        <p>
+                            <strong>Email:</strong><br>
+
+                            networkstore@example.com
+                        </p>
+
+
+                        <!-- เวลาทำการ -->
+                        <p>
+                            <strong>Business Hours:</strong><br>
+
+                            Monday - Saturday<br>
+                            08:00 - 17:00
+                        </p>
+
+
+                        <!-- Bootstrap Alert -->
+                        <!-- ใช้สำหรับแสดงข้อความที่ต้องการเน้น -->
+                        <div class="alert alert-primary mt-4"
+                             role="alert">
+
+                            สอบถามข้อมูลสินค้าและบริการ
+                            ผ่านแบบฟอร์มด้านข้างได้เลย
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- RIGHT : CONTACT FORM -->
+            <!-- ================================================= -->
+
+            <!--
+            col-lg-7 =
+            หน้าจอขนาดใหญ่ใช้พื้นที่ 7 จาก 12 Column
+            -->
+            <div class="col-lg-7">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="fw-bold mb-4">
+                            แบบฟอร์มติดต่อ
+                        </h3>
+
+
+                        <!--
+                        form = แบบฟอร์มรับข้อมูลจากผู้ใช้งาน
+
+                        action="#"
+                        ตอนนี้ยังไม่มี Backend
+                        จึงยังไม่ได้ส่งข้อมูลไป Database
+                        -->
+                        <form action="#">
+
+
+                            <!-- ================================= -->
+                            <!-- NAME -->
+                            <!-- ================================= -->
+
+                            <div class="mb-3">
+
+                                <!-- Label ของช่องชื่อ -->
+                                <label for="fullname"
+                                       class="form-label">
+
+                                    ชื่อ - นามสกุล
+
+                                </label>
+
+
+                                <!--
+                                form-control =
+                                Bootstrap Class สำหรับช่อง Input
+                                -->
+                                <input type="text"
+                                       class="form-control"
+                                       id="fullname"
+                                       placeholder="กรอกชื่อและนามสกุล"
+                                       required>
+
+                            </div>
+
+
+
+                            <!-- ================================= -->
+                            <!-- EMAIL -->
+                            <!-- ================================= -->
+
+                            <div class="mb-3">
+
+                                <label for="email"
+                                       class="form-label">
+
+                                    Email
+
+                                </label>
+
+
+                                <!--
+                                type="email"
+                                Browser จะช่วยตรวจรูปแบบ Email
+                                -->
+                                <input type="email"
+                                       class="form-control"
+                                       id="email"
+                                       placeholder="example@email.com"
+                                       required>
+
+                            </div>
+
+
+
+                            <!-- ================================= -->
+                            <!-- TELEPHONE -->
+                            <!-- ================================= -->
+
+                            <div class="mb-3">
+
+                                <label for="phone"
+                                       class="form-label">
+
+                                    เบอร์โทรศัพท์
+
+                                </label>
+
+
+                                <!--
+                                type="tel"
+                                ใช้สำหรับรับข้อมูลหมายเลขโทรศัพท์
+                                -->
+                                <input type="tel"
+                                       class="form-control"
+                                       id="phone"
+                                       placeholder="08X-XXX-XXXX"
+                                       required>
+
+                            </div>
+
+
+
+                            <!-- ================================= -->
+                            <!-- SUBJECT -->
+                            <!-- ================================= -->
+
+                            <div class="mb-3">
+
+                                <label for="subject"
+                                       class="form-label">
+
+                                    หัวข้อ
+
+                                </label>
+
+
+                                <!--
+                                select =
+                                ให้ผู้ใช้งานเลือกหัวข้อจากรายการ
+                                -->
+                                <select class="form-select"
+                                        id="subject"
+                                        required>
+
+                                    <!-- ค่าเริ่มต้น -->
+                                    <option value=""
+                                            selected
+                                            disabled>
+
+                                        กรุณาเลือกหัวข้อ
+
+                                    </option>
+
+                                    <option value="product">
+                                        สอบถามสินค้า
+                                    </option>
+
+                                    <option value="service">
+                                        สอบถามบริการ
+                                    </option>
+
+                                    <option value="network">
+                                        ระบบ Network
+                                    </option>
+
+                                    <option value="fiber">
+                                        ระบบ Fiber Optic
+                                    </option>
+
+                                    <option value="other">
+                                        อื่น ๆ
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- ================================= -->
+                            <!-- MESSAGE -->
+                            <!-- ================================= -->
+
+                            <div class="mb-3">
+
+                                <label for="message"
+                                       class="form-label">
+
+                                    รายละเอียด
+
+                                </label>
+
+
+                                <!--
+                                textarea =
+                                ช่องสำหรับกรอกข้อความหลายบรรทัด
+
+                                rows="5" =
+                                กำหนดความสูงประมาณ 5 บรรทัด
+                                -->
+                                <textarea class="form-control"
+                                          id="message"
+                                          rows="5"
+                                          placeholder="กรอกรายละเอียดที่ต้องการสอบถาม"
+                                          required></textarea>
+
+                            </div>
+
+
+
+                            <!-- ================================= -->
+                            <!-- SUBMIT BUTTON -->
+                            <!-- ================================= -->
+
+                            <!--
+                            type="submit" =
+                            ปุ่มสำหรับ Submit Form
+
+                            btn-primary =
+                            Bootstrap Button สี Primary
+                            -->
+                            <button type="submit"
+                                    class="btn btn-primary">
+
+                                Submit
+
+                            </button>
+
+
+                            <!-- ปุ่ม Reset ใช้ล้างข้อมูลใน Form -->
+                            <button type="reset"
+                                    class="btn btn-outline-secondary ms-2">
+
+                                Reset
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- LOCATION / MAP INFORMATION -->
+<!-- โจทย์กำหนดให้มีแผนที่หรือข้อมูลการติดต่อ -->
+<!-- เราใส่ Location Information เพิ่มอีกส่วน -->
+<!-- ====================================================== -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+
+            <h2 class="fw-bold">
+                Our Location
+            </h2>
+
+            <p class="text-muted">
+                Network Store - Rayong, Thailand
+            </p>
+
+        </div>
+
+
+        <!--
+        ratio ratio-21x9 =
+        Bootstrap Ratio
+        ช่วยกำหนดพื้นที่ให้ Responsive
+        -->
+        <div class="ratio ratio-21x9">
+
+            <!--
+            ใช้ Placeholder แทนแผนที่ก่อน
+            เพื่อไม่ต้องใช้ Google Maps API
+            -->
+           <!-- ส่วนแสดงแผนที่ Google Maps -->
+<!-- Bootstrap Ratio ช่วยให้แผนที่ปรับขนาดตามหน้าจอ -->
+
+<div class="ratio ratio-21x9">
+
+    <!-- แสดงแผนที่จังหวัดระยอง -->
+    <iframe
+        src="https://www.google.com/maps?q=Rayong,Thailand&output=embed"
+        title="Network Store Location"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ส่วนล่างสุดของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container text-center">
+
+        <h5>
+            NETWORK STORE
+        </h5>
+
+        <p class="mb-1">
+            Network & Fiber Optic Equipment
+        </p>
+
+        <small>
+            © 2026 Network Store. All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ====================================================== -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ====================================================== -->
+
+<!--
+Bootstrap JavaScript Bundle
+
+ใช้ทำให้ Component ที่ต้องใช้ JavaScript ทำงาน
+เช่น
+Navbar Collapse
+Modal
+Accordion
+Carousel
+Dropdown
+-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

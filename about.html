@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<!-- กำหนดภาษาหลักของเว็บไซต์เป็นภาษาไทย -->
+<html lang="th">
+
+<head>
+
+    <!-- รองรับตัวอักษรภาษาไทย -->
+    <meta charset="UTF-8">
+
+    <!-- ทำให้เว็บไซต์ Responsive บนมือถือและ Tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ชื่อที่แสดงบน Tab ของ Browser -->
+    <title>Network Store | About</title>
+
+
+    <!-- ====================================================== -->
+    <!-- BOOTSTRAP 5 CSS -->
+    <!-- เรียกใช้ Bootstrap ผ่าน CDN -->
+    <!-- ====================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- ====================================================== -->
+    <!-- CUSTOM CSS -->
+    <!-- เรียกใช้ CSS ที่เราเขียนเอง -->
+    <!-- ====================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ====================================================== -->
+<!-- NAVBAR -->
+<!-- เมนูหลักด้านบนของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<!--
+navbar           = Bootstrap Navbar
+navbar-expand-lg = หน้าจอใหญ่แสดงเมนูปกติ
+                    หน้าจอเล็กเปลี่ยนเป็น Hamburger Menu
+navbar-dark      = รูปแบบข้อความสำหรับพื้นหลังเข้ม
+bg-primary       = พื้นหลังสี Primary
+sticky-top       = Navbar ติดด้านบนเมื่อ Scroll
+-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <div class="container">
+
+        <!-- ชื่อเว็บไซต์ / Logo -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            NETWORK STORE
+        </a>
+
+
+        <!-- ปุ่ม Hamburger Menu สำหรับหน้าจอขนาดเล็ก -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- เมนูที่จะย่อ/ขยายเมื่ออยู่บน Mobile -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <!-- ms-auto = จัดเมนูไปทางขวา -->
+            <ul class="navbar-nav ms-auto">
+
+
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- About -->
+                <!-- active แสดงว่าปัจจุบันอยู่หน้า About -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- Services -->
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">
+                        Services
+                    </a>
+                </li>
+
+
+                <!-- Products -->
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ====================================================== -->
+<!-- BREADCRUMB -->
+<!-- ใช้แสดงตำแหน่งของหน้าปัจจุบัน -->
+<!-- เช่น Home > About -->
+<!-- ====================================================== -->
+
+<section class="bg-light py-3">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb mb-0">
+
+                <!-- Link กลับหน้า Home -->
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <!-- หน้าปัจจุบัน -->
+                <li class="breadcrumb-item active"
+                    aria-current="page">
+                    About
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- ABOUT HEADER -->
+<!-- ส่วนหัวของหน้า About -->
+<!-- ====================================================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <!-- Bootstrap Grid -->
+        <div class="row align-items-center g-5">
+
+
+            <!-- ================================================= -->
+            <!-- ฝั่งซ้าย : ข้อความเกี่ยวกับร้าน -->
+            <!-- ================================================= -->
+
+            <!--
+            col-lg-6 หมายถึง
+            หน้าจอ Large ใช้พื้นที่ 6 จาก 12 Column
+            หรือครึ่งหนึ่งของหน้าจอ
+            -->
+            <div class="col-lg-6">
+
+
+                <!-- Badge -->
+                <span class="badge bg-primary mb-3">
+                    ABOUT US
+                </span>
+
+
+                <!-- หัวข้อหลัก -->
+                <h1 class="fw-bold mb-3">
+                    เกี่ยวกับ Network Store
+                </h1>
+
+
+                <!-- คำอธิบายเว็บไซต์ -->
+                <p class="lead">
+                    Network Store คือเว็บไซต์ร้านค้าออนไลน์
+                    สำหรับอุปกรณ์ Network และ Fiber Optic
+                </p>
+
+
+                <p class="text-muted">
+
+                    เว็บไซต์ของเรารวบรวมอุปกรณ์สำหรับงานระบบเครือข่าย
+                    เช่น สาย LAN, Fiber Optic, Network Switch,
+                    SFP Module, Patch Panel และ Network Rack
+
+                </p>
+
+
+                <p class="text-muted">
+
+                    เหมาะสำหรับผู้ใช้งานทั่วไป สำนักงาน
+                    และงานระบบ Network ภายในโรงงานอุตสาหกรรม
+
+                </p>
+
+
+                <!--
+                Button ของ Bootstrap
+                เมื่อกดจะไปหน้า Products
+                -->
+                <a href="product.html"
+                   class="btn btn-primary btn-lg">
+
+                    ดูสินค้าของเรา
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- ฝั่งขวา : รูปภาพ -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-6 text-center">
+
+
+                <!--
+                img-fluid = รูป Responsive
+                rounded   = มุมรูปโค้ง
+                shadow    = เพิ่มเงา
+                -->
+                <img src="images/about-network.png"
+                     class="img-fluid rounded shadow"
+                     alt="Network Equipment">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- INFORMATION CARDS -->
+<!-- Card แสดงจุดเด่นของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+
+        <!-- หัวข้อ -->
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Why Choose Us?
+            </h2>
+
+            <p class="text-muted">
+                จุดเด่นของ Network Store
+            </p>
+
+        </div>
+
+
+
+        <!-- Bootstrap Grid -->
+        <div class="row g-4">
+
+
+            <!-- ================================================= -->
+            <!-- CARD 1 -->
+            <!-- ================================================= -->
+
+            <div class="col-md-4">
+
+                <!--
+                h-100     = Card สูงเท่ากัน
+                shadow-sm = เพิ่มเงาเล็กน้อย
+                -->
+                <div class="card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <!-- Badge -->
+                        <span class="badge bg-primary mb-3">
+                            QUALITY
+                        </span>
+
+                        <h4 class="card-title">
+                            สินค้าคุณภาพ
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            คัดเลือกอุปกรณ์ Network และ Fiber Optic
+                            ที่เหมาะสำหรับการใช้งานระบบเครือข่าย
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- CARD 2 -->
+            <!-- ================================================= -->
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-success mb-3">
+                            SERVICE
+                        </span>
+
+                        <h4 class="card-title">
+                            ให้คำแนะนำ
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            ช่วยแนะนำอุปกรณ์ให้เหมาะสม
+                            กับระบบ Network และการใช้งานของลูกค้า
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- CARD 3 -->
+            <!-- ================================================= -->
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-warning text-dark mb-3">
+                            SOLUTION
+                        </span>
+
+                        <h4 class="card-title">
+                            สินค้าครบวงจร
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            มีสินค้า LAN, Fiber Optic,
+                            Network Switch และอุปกรณ์ประกอบระบบ
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- ACCORDION -->
+<!-- Component สำหรับซ่อน/แสดงข้อมูล -->
+<!-- ====================================================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+
+        <!-- หัวข้อ -->
+        <div class="text-center mb-4">
+
+            <h2 class="fw-bold">
+                คำถามที่พบบ่อย
+            </h2>
+
+            <p class="text-muted">
+                Frequently Asked Questions
+            </p>
+
+        </div>
+
+
+
+        <!-- Accordion หลัก -->
+        <div class="accordion"
+             id="aboutAccordion">
+
+
+            <!-- ================================================= -->
+            <!-- ACCORDION ITEM 1 -->
+            <!-- ================================================= -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <!--
+                    data-bs-toggle="collapse"
+                    ใช้ JavaScript ของ Bootstrap
+                    เพื่อเปิด/ปิดเนื้อหา
+                    -->
+                    <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+
+                        Network Store จำหน่ายสินค้าอะไรบ้าง?
+
+                    </button>
+
+                </h2>
+
+
+                <!-- เนื้อหาที่เปิด/ปิด -->
+                <!-- show = เปิดรายการแรกไว้เป็นค่าเริ่มต้น -->
+                <div id="collapseOne"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#aboutAccordion">
+
+                    <div class="accordion-body">
+
+                        จำหน่ายอุปกรณ์ Network, LAN,
+                        Fiber Optic, Network Switch,
+                        SFP Module, Rack และอุปกรณ์ที่เกี่ยวข้อง
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- ACCORDION ITEM 2 -->
+            <!-- ================================================= -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+
+                        สามารถสอบถามข้อมูลสินค้าได้หรือไม่?
+
+                    </button>
+
+                </h2>
+
+
+                <div id="collapseTwo"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#aboutAccordion">
+
+                    <div class="accordion-body">
+
+                        สามารถสอบถามรายละเอียดสินค้า
+                        ผ่านหน้า Contact ของเว็บไซต์ได้
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- ACCORDION ITEM 3 -->
+            <!-- ================================================= -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+
+                        สินค้าเหมาะสำหรับงานประเภทใด?
+
+                    </button>
+
+                </h2>
+
+
+                <div id="collapseThree"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#aboutAccordion">
+
+                    <div class="accordion-body">
+
+                        เหมาะสำหรับบ้าน สำนักงาน
+                        ระบบ CCTV และระบบ Network
+                        ภายในโรงงานอุตสาหกรรม
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- CALL TO ACTION -->
+<!-- ชักชวนผู้ใช้งานให้ไปหน้า Contact -->
+<!-- ====================================================== -->
+
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+            ต้องการสอบถามข้อมูลเพิ่มเติม?
+        </h2>
+
+        <p>
+            ติดต่อเราเพื่อสอบถามรายละเอียดสินค้า
+            และอุปกรณ์ Network
+        </p>
+
+
+        <!-- Button ไปหน้า Contact -->
+        <a href="contact.html"
+           class="btn btn-light btn-lg">
+
+            ติดต่อเรา
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ส่วนล่างของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container text-center">
+
+        <h5>
+            NETWORK STORE
+        </h5>
+
+        <p class="mb-1">
+            Network & Fiber Optic Equipment
+        </p>
+
+        <small>
+            © 2026 Network Store. All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ====================================================== -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ====================================================== -->
+
+<!--
+Bootstrap JavaScript Bundle
+
+ทำให้ Component ที่ต้องใช้ JavaScript ทำงาน เช่น
+
+- Hamburger Menu
+- Accordion
+- Modal
+- Carousel
+- Dropdown
+-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+</html>

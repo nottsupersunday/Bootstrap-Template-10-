@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <!-- รองรับภาษาไทย -->
+    <meta charset="UTF-8">
+
+    <!-- ทำให้เว็บไซต์ Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ชื่อที่แสดงบน Tab Browser -->
+    <title>Network Store | Services</title>
+
+    <!-- เรียกใช้ Bootstrap 5 CSS ผ่าน CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- เรียกใช้ CSS ที่เราเขียนเอง -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ====================================================== -->
+<!-- NAVBAR : เมนูหลักของเว็บไซต์ -->
+<!-- ====================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <div class="container">
+
+        <!-- ชื่อเว็บไซต์ -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            NETWORK STORE
+        </a>
+
+        <!-- ปุ่ม Hamburger สำหรับ Mobile -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- เมนูหลัก -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <!-- ms-auto จัดเมนูไปทางขวา -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <!-- active หมายถึงหน้าปัจจุบัน -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ====================================================== -->
+<!-- BREADCRUMB -->
+<!-- แสดงตำแหน่งหน้าปัจจุบัน Home > Services -->
+<!-- ====================================================== -->
+
+<section class="bg-light py-3">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb mb-0">
+
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="breadcrumb-item active"
+                    aria-current="page">
+                    Services
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE HEADER -->
+<!-- ส่วนหัวของหน้า Services -->
+<!-- ====================================================== -->
+
+<section class="py-5 text-center">
+
+    <div class="container">
+
+        <!-- Badge -->
+        <span class="badge bg-primary mb-3">
+            OUR SERVICES
+        </span>
+
+        <!-- หัวข้อ -->
+        <h1 class="fw-bold">
+            บริการของเรา
+        </h1>
+
+        <!-- คำอธิบาย -->
+        <p class="text-muted">
+
+            บริการด้าน Network, LAN และ Fiber Optic
+            สำหรับบ้าน สำนักงาน และโรงงานอุตสาหกรรม
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- ALERT -->
+<!-- Bootstrap Alert ใช้แสดงข้อความที่ต้องการเน้น -->
+<!-- ====================================================== -->
+
+<div class="container">
+
+    <!--
+    alert         = Bootstrap Alert
+    alert-primary = Alert สี Primary
+    text-center   = จัดข้อความกึ่งกลาง
+    -->
+    <div class="alert alert-primary text-center"
+         role="alert">
+
+        ต้องการสอบถามบริการเพิ่มเติม?
+        สามารถติดต่อเราได้ผ่านหน้า
+        <a href="contact.html" class="alert-link">
+            Contact
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- SERVICES -->
+<!-- แสดงบริการทั้งหมด 6 รายการ -->
+<!-- ====================================================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <!--
+        Bootstrap Grid
+        row = สร้างแถว
+        g-4 = กำหนดช่องว่างระหว่าง Card
+        -->
+        <div class="row g-4">
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 1 : Network Installation -->
+            <!-- ================================================= -->
+
+            <!--
+            col-lg-4 = หน้าจอใหญ่ 4/12
+                       แสดง 3 Card ต่อแถว
+
+            col-md-6 = Tablet 6/12
+                       แสดง 2 Card ต่อแถว
+            -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <!-- รูปบริการ -->
+                    <img src="images/service-network.jpg"
+                         class="card-img-top"
+                         alt="Network Installation">
+
+                    <div class="card-body">
+
+                        <!-- Badge -->
+                        <span class="badge bg-primary mb-2">
+                            NETWORK
+                        </span>
+
+                        <!-- ชื่อบริการ -->
+                        <h4 class="card-title">
+                            Network Installation
+                        </h4>
+
+                        <!-- รายละเอียด -->
+                        <p class="card-text text-muted">
+
+                            บริการติดตั้งระบบ Network
+                            สำหรับสำนักงาน อาคาร
+                            และโรงงานอุตสาหกรรม
+
+                        </p>
+
+                        <!-- Button ไปหน้า Contact -->
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 2 : LAN Cabling -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/service-lan.jpg"
+                         class="card-img-top"
+                         alt="LAN Cabling">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            LAN
+                        </span>
+
+                        <h4 class="card-title">
+                            LAN Cabling
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            บริการติดตั้งสาย LAN
+                            สำหรับ Computer, Access Point,
+                            CCTV และอุปกรณ์ Network
+
+                        </p>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 3 : Fiber Optic -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/service-fiber.jpg"
+                         class="card-img-top"
+                         alt="Fiber Optic">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-2">
+                            FIBER
+                        </span>
+
+                        <h4 class="card-title">
+                            Fiber Optic Installation
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            บริการติดตั้งและเชื่อมต่อ
+                            Fiber Optic สำหรับระบบ Backbone
+                            และการเชื่อมต่อระยะไกล
+
+                        </p>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 4 : Fiber Splicing -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/service-splicing.jpg"
+                         class="card-img-top"
+                         alt="Fiber Splicing">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            SPLICING
+                        </span>
+
+                        <h4 class="card-title">
+                            Fiber Optic Splicing
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            บริการ Fusion Splicing
+                            เชื่อมต่อสาย Fiber Optic
+                            พร้อมตรวจสอบคุณภาพของจุดเชื่อมต่อ
+
+                        </p>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 5 : Network Testing -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/service-testing.jpg"
+                         class="card-img-top"
+                         alt="Network Testing">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-info text-dark mb-2">
+                            TESTING
+                        </span>
+
+                        <h4 class="card-title">
+                            Network Testing
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            บริการตรวจสอบระบบ Network
+                            และทดสอบสายสัญญาณ
+                            เพื่อค้นหาและแก้ไขปัญหาระบบเครือข่าย
+
+                        </p>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SERVICE 6 : Maintenance -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/service-maintenance.jpg"
+                         class="card-img-top"
+                         alt="Network Maintenance">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-secondary mb-2">
+                            MAINTENANCE
+                        </span>
+
+                        <h4 class="card-title">
+                            Network Maintenance
+                        </h4>
+
+                        <p class="card-text text-muted">
+
+                            บริการตรวจสอบและบำรุงรักษา
+                            ระบบ Network และ Fiber Optic
+                            เพื่อให้ระบบพร้อมใช้งาน
+
+                        </p>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+
+                            สอบถามบริการ
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- CALL TO ACTION -->
+<!-- ชักชวนผู้ใช้งานไปดูสินค้า -->
+<!-- ====================================================== -->
+
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+            กำลังมองหาอุปกรณ์ Network?
+        </h2>
+
+        <p>
+            เลือกชมอุปกรณ์ Network และ Fiber Optic
+            ได้ที่หน้าสินค้าของเรา
+        </p>
+
+        <!-- ปุ่มไปหน้า Products -->
+        <a href="product.html"
+           class="btn btn-light btn-lg">
+
+            ดูสินค้าทั้งหมด
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container text-center">
+
+        <h5>
+            NETWORK STORE
+        </h5>
+
+        <p class="mb-1">
+            Network & Fiber Optic Equipment
+        </p>
+
+        <small>
+            © 2026 Network Store. All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- ====================================================== -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ====================================================== -->
+
+<!--
+JavaScript Bundle ของ Bootstrap
+ใช้สำหรับ Component ที่มี Interaction
+เช่น Navbar, Modal, Accordion และ Carousel
+-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+</html>

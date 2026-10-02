@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #003366, #0066cc);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+}
+
+.card {
+    transition: 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================================================
+   รูปสินค้าใน Card
+   ========================================================= */
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+
+    /* แสดงรูปสินค้าให้ครบ ไม่ตัดส่วนของภาพ */
+    object-fit: contain;
+
+    /* เพิ่มพื้นที่รอบรูปสินค้า */
+    padding: 10px;
+
+    /* กำหนดพื้นหลังเป็นสีขาว */
+    background-color: #ffffff;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+/* =========================================================
+   CAROUSEL
+   ปรับขนาดรูปภาพภายใน Carousel ให้เท่ากัน
+   ========================================================= */
+
+.carousel-image {
+    height: 450px;
+
+    /* ทำให้รูปเต็มพื้นที่โดยไม่บีบสัดส่วน */
+    object-fit: cover;
+}
+
+
+/* เพิ่มเงาดำหลังข้อความบน Carousel
+   เพื่อให้ข้อความอ่านง่ายเมื่ออยู่บนรูปภาพ */
+.carousel-caption {
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   เมื่อหน้าจอเล็กกว่า 768px เช่น Mobile
+   ลดความสูงของ Carousel
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .carousel-image {
+        height: 250px;
+    }
+
+}
+
+/* เพิ่มระยะห่างด้านบนเพื่อไม่ให้ Navbar บังเนื้อหา */
+.contact-header {
+    padding-top: 60px;
+}
